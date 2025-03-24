@@ -124,12 +124,7 @@ vibeDB gives you shared structure - light enough to drop into an AI IDE, durable
 
 Want to see how it works?
 
-[Quick Start →](./quick-start.md)
+[Quick Start →](QUICK-START.md)
 
 No setup. No boilerplate.  
 Just a few fields. Then you’ll get it.
-
-
-Take 3 seconds to read this sentence:
-
-You just opened this page and read the first few lines.
