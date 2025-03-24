@@ -48,7 +48,7 @@ You're writing for someone - or something - that needs to understand later.
 Want to try more?
 
 - [First Moon Landing](./samples/moon-landing.json)  
-- [A Slack escalation](./samples/escalation.json)  
+- [A critical escalation](./samples/escalation.json)  
 - [A customer quote from a demo](./samples/demo-quote.json)  
 - [A changelog entry](./samples/changelog.json)  
 - [A conversation about a decision](./samples/internal-decision.json)
