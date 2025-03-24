@@ -1,1 +1,83 @@
-{"who": "nasa", "what": "announced moon landing", "when": "1969-07-20", "where": "television broadcast", "thing": "That"s one small step for man, one giant leap for mankind."}
+[
+    {
+      "who": "Gene Kranz (Flight Director), NASA Mission Control",
+      "what": "launched Apollo 11 mission",
+      "when": "1969-07-16",
+      "where": "Kennedy Space Center",
+      "thing": "Mission: Apollo 11\nLaunch Time: 9:32 a.m. EDT\nVehicle: Saturn V\n\nCrew:\n- Neil Armstrong (Commander)\n- Buzz Aldrin (Lunar Module Pilot)\n- Michael Collins (Command Module Pilot)\n\nPrimary Mission Objectives:\n1. Land men on the Moon\n2. Return them safely to Earth\n3. Conduct scientific experiments\n\nLaunch Sequence:\n- T-10:00: Final systems check\n- T-5:00: Crew ingress\n- T-1:00: Final countdown\n- T-0: Liftoff\n\nStatus: Launch successful, all systems nominal",
+      "how": "nasa:mission:apollo-11:launch"
+    },
+    {
+      "who": "Michael Collins (Command Module Pilot), Apollo 11 Crew",
+      "what": "described lunar orbit experience",
+      "when": "1974",
+      "where": "Memoir Publication",
+      "thing": "Excerpt from 'Carrying the Fire' (Chapter 12):\n\n\"I am alone now, truly alone, and absolutely isolated from any known life. I am it. If a count were taken, the score would be three billion plus two on the other side of the Moon, and one plus God knows what on this side.\"\n\nContext:\n- Written during lunar orbit\n- Command Module Columbia\n- Alone while Armstrong and Aldrin descended to surface\n- Position: Far side of the Moon\n\nTechnical Details:\n- Orbital altitude: 60 nautical miles\n- Orbital period: 2 hours\n- Communication blackout: 48 minutes per orbit",
+      "how": "book:carrying-the-fire:chapter-12"
+    },
+    {
+      "who": "Neil Armstrong (Mission Commander), Apollo 11 Crew",
+      "what": "spoke first words on lunar surface",
+      "when": "1969-07-20 22:56 UTC",
+      "where": "Sea of Tranquility",
+      "thing": "Mission Control Transcript:\n\n[22:56:15] Armstrong: \"That's one small step for [a] man, one giant leap for mankind.\"\n\nContext:\n- First human words spoken on lunar surface\n- Armstrong descending ladder of Lunar Module Eagle\n- Estimated 600 million people watching live\n- Broadcast via satellite to worldwide audience\n\nTechnical Details:\n- Location: Sea of Tranquility\n- Lunar Module: Eagle\n- Time since landing: 6 hours 39 minutes\n- Surface temperature: 250°F (121°C)\n\nNote: Original audio slightly unclear, [a] added in later transcriptions",
+      "how": "nasa:mission:apollo-11:transcript"
+    },
+    {
+      "who": "Buzz Aldrin (Lunar Module Pilot), Apollo 11 Crew",
+      "what": "described lunar landscape",
+      "when": "1969-07-20",
+      "where": "Sea of Tranquility",
+      "thing": "Mission Control Transcript:\n\n[Aldrin]: \"Beautiful view.\"\n[Armstrong]: \"Isn't that something? Magnificent sight out here.\"\n[Aldrin]: \"Magnificent desolation.\"\n\nContext:\n- First human description of lunar surface\n- Spoken shortly after Armstrong's first step\n- During initial surface exploration\n\nTechnical Details:\n- Location: Sea of Tranquility\n- Time: ~23:00 UTC\n- Surface conditions: Fine, powdery dust\n- Horizon distance: ~2.5 miles\n\nPhotographic Record:\n- Multiple surface photos taken\n- First color photo of lunar surface\n- Footprint documentation",
+      "how": "nasa:mission:apollo-11:transcript"
+    },
+    {
+      "who": "Walter Cronkite (Lead Anchor), CBS News Team",
+      "what": "reported moon landing",
+      "when": "1969-07-20",
+      "where": "CBS News Broadcast",
+      "thing": "CBS News Broadcast Transcript:\n\n[20:17:40] Cronkite: \"Man on the Moon! Boy... when that engine shut down... and we heard the confirmation from Houston... it was almost too much to take.\"\n\nContext:\n- Live broadcast from CBS News studio\n- 30+ hours of continuous coverage\n- Estimated 600 million viewers worldwide\n\nTechnical Details:\n- Broadcast location: CBS Studio 41, New York\n- Satellite feed: Intelsat III\n- Color broadcast (first for CBS)\n\nProduction Notes:\n- Cronkite removed glasses in emotional moment\n- Studio filled with model rockets and space memorabilia\n- Multiple camera angles of landing coverage",
+      "how": "cbs:news:apollo-11:landing"
+    },
+    {
+      "who": "Yuri Zhukov (Editor-in-Chief), Pravda Editorial Board",
+      "what": "reported on Apollo 11 achievement",
+      "when": "1969-07-21",
+      "where": "Pravda Newspaper",
+      "thing": "Pravda Front Page (July 21, 1969):\n\n\"American astronauts Armstrong and Aldrin walked on the Moon. This is an achievement not only for the United States but for all mankind.\"\n\nContext:\n- First Soviet acknowledgment of Apollo success\n- Front page coverage\n- Shift from previous space race rhetoric\n\nTechnical Details:\n- Circulation: 10.7 million copies\n- Print run: 3 editions\n- Distribution: All Soviet republics\n\nHistorical Significance:\n- Marked beginning of détente in space relations\n- Led to future US-Soviet space cooperation\n- Influenced Soviet space program direction",
+      "how": "newspaper:pravda:1969-07-21"
+    },
+    {
+      "who": "Buzz Aldrin (Lunar Module Pilot), NASA Mission Team",
+      "what": "deployed scientific instruments",
+      "when": "1969-07-20",
+      "where": "Lunar Surface",
+      "thing": "Mission Control Transcript:\n\n[Aldrin]: \"Deploying PSEP now...\"\n[Armstrong]: \"Roger, PSEP deployed.\"\n[Aldrin]: \"Laser reflector going out...\"\n\nScientific Instruments Deployed:\n1. Passive Seismic Experiment Package (PSEP)\n   - Measures moonquakes and meteor impacts\n   - Powered by solar panels\n   - Operated until 1977\n\n2. Laser Ranging Retroreflector\n   - Reflects laser beams from Earth\n   - Measures Earth-Moon distance\n   - Still operational today\n\nTechnical Details:\n- Location: 20 meters from LM\n- Deployment time: 15 minutes\n- Surface temperature: 250°F\n- Dust contamination: Minimal\n\nData Collection:\n- First moonquake recorded: August 1, 1969\n- First laser ranging: August 1, 1969\n- Continuous data until 1977",
+      "how": "nasa:mission:apollo-11:science"
+    },
+    {
+      "who": "Margaret Hamilton (Software Engineer), MIT Instrumentation Laboratory",
+      "what": "explained software contribution",
+      "when": "1970",
+      "where": "Smithsonian Interview",
+      "thing": "Smithsonian Oral History Interview:\n\n\"The software prevented an abort by prioritizing tasks when the system became overloaded. Without it, Apollo 11 might have landed hard or not at all.\"\n\nContext:\n- Interview conducted at MIT\n- Part of Apollo program oral history project\n- Focus on software development role\n\nTechnical Details:\n- Program: Apollo Guidance Computer (AGC)\n- Language: Assembly\n- Size: 72KB\n- Development: 1961-1969\n\nKey Contributions:\n- Asynchronous flight software\n- Priority scheduling system\n- Error detection and recovery\n- Real-time operating system\n\nHistorical Impact:\n- First software to be considered mission-critical\n- Led to modern software engineering practices\n- Influenced future space program software",
+      "how": "smithsonian:oral-history:hamilton"
+    },
+    {
+      "who": "William Safire (Speechwriter), White House Staff",
+      "what": "sent telegram to Armstrong family",
+      "when": "1969-07-20",
+      "where": "Wapakoneta, Ohio",
+      "thing": "White House Telegram:\n\nTO MR. AND MRS. ARMSTRONG, WAPAKONETA OHIO:\nYOUR SON HAS JUST WALKED ON THE MOON. THE NATION REJOICES WITH YOU. — THE WHITE HOUSE\n\nContext:\n- Sent immediately after landing confirmation\n- Hand-delivered by Western Union\n- First official White House communication\n\nTechnical Details:\n- Delivery time: 4:17 PM EDT\n- Message length: 47 words\n- Delivery method: Western Union\n\nHistorical Significance:\n- First presidential communication about moon landing\n- Set precedent for future space achievements\n- Part of Nixon administration's space policy",
+      "how": "telegram:white-house:1969-07-20"
+    },
+    {
+      "who": "Louis Heren (Foreign Editor), The Times London",
+      "what": "reported global reaction",
+      "when": "1969-07-21",
+      "where": "International Edition",
+      "thing": "The Times London Article:\n\n\"In Nairobi, Tokyo, Buenos Aires, and Toronto, crowds gathered in public spaces to watch the Moon landing broadcast. In many places, people stood outside and simply looked upward — for once, not as symbol, but as destination.\"\n\nContext:\n- International edition coverage\n- Focus on global reaction\n- Shift from UK-centric reporting\n\nTechnical Details:\n- Circulation: 450,000\n- Print run: 4 editions\n- Distribution: 120 countries\n\nGlobal Coverage:\n- Nairobi: 50,000 gathered in Uhuru Park\n- Tokyo: 1 million watched in public spaces\n- Buenos Aires: Plaza de Mayo filled\n- Toronto: Nathan Phillips Square packed\n\nHistorical Impact:\n- First truly global media event\n- Unified human experience\n- Changed international space perception",
+      "how": "newspaper:times:1969-07-21"
+    }
+]
+  

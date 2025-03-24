@@ -1,1 +1,82 @@
-{"who": "customer:megacorp", "what": "reacted during product demo", "when": "2024-07-02", "where": "Zoom demo call", "thing": "This is honestly the first AI feature I’ve seen that feels useful for our team."}
+[
+    {
+      "who": "Sarah Chen (Director of Product), Product Management",
+      "what": "provided product feedback",
+      "when": "2024-07-02",
+      "where": "Product Demo Call",
+      "thing": "Demo Session: AI Feature Review\nDate: July 2, 2024\nDuration: 45 minutes\n\nContext:\n- Reviewing new AI-powered document analysis feature\n- Current process: Manual review of 100+ documents/week\n- Pain point: Time-consuming, inconsistent results\n\nKey Feedback:\n\"This is honestly the first AI feature I've seen that feels useful for our team.\"\n\nFollow-up Discussion:\n- Asked about training data sources\n- Requested early access for legal team\n- Suggested integration with existing workflow\n\nAction Items:\n- Schedule technical deep dive with engineering team\n- Prepare ROI analysis for next quarter's budget review",
+      "how": "zoom:recording:demo-2024-07-02"
+    },
+    {
+      "who": "Michael Chang (Engineering Director), Engineering Leadership",
+      "what": "provided technical feedback",
+      "when": "2024-07-01",
+      "where": "Technical Review Meeting",
+      "thing": "Demo Session: API Integration Review\nDate: July 1, 2024\nDuration: 60 minutes\n\nContext:\n- Evaluating API capabilities for integration\n- Current stack: Node.js, React, AWS\n- Focus on scalability and security\n\nKey Feedback:\n\"The API design is clean and well-documented. The rate limiting and authentication flow are particularly well thought out.\"\n\nFollow-up Discussion:\n- Discussed custom webhook support\n- Explored caching strategies\n- Reviewed security protocols\n\nAction Items:\n- Schedule security audit\n- Begin integration planning\n- Set up development environment",
+      "how": "teams:recording:demo-2024-07-01"
+    },
+    {
+      "who": "Emily Rodriguez (Senior PM), Product Management",
+      "what": "provided feature feedback",
+      "when": "2024-06-30",
+      "where": "Feature Preview Call",
+      "thing": "Demo Session: Dashboard Analytics\nDate: June 30, 2024\nDuration: 30 minutes\n\nContext:\n- Reviewing new analytics dashboard\n- Current users: 500+ daily active\n- Focus on user engagement metrics\n\nKey Feedback:\n\"The real-time analytics are impressive. This will help us make data-driven decisions much faster.\"\n\nFollow-up Discussion:\n- Custom report builder needs\n- Export functionality\n- Mobile optimization\n\nAction Items:\n- Schedule UX review\n- Create feature request list\n- Plan beta testing",
+      "how": "zoom:recording:demo-2024-06-30"
+    },
+    {
+      "who": "David Kim (Engineering Manager), Platform Engineering",
+      "what": "provided architecture feedback",
+      "when": "2024-06-29",
+      "where": "Architecture Review",
+      "thing": "Demo Session: System Architecture\nDate: June 29, 2024\nDuration: 90 minutes\n\nContext:\n- Reviewing system architecture\n- Current scale: 1M+ daily requests\n- Focus on scalability and reliability\n\nKey Feedback:\n\"The microservices architecture is well-designed. The service mesh implementation is particularly impressive.\"\n\nFollow-up Discussion:\n- Load balancing strategies\n- Disaster recovery plans\n- Monitoring solutions\n\nAction Items:\n- Schedule performance testing\n- Review scaling plans\n- Document architecture decisions",
+      "how": "teams:recording:demo-2024-06-29"
+    },
+    {
+      "who": "Lisa Patel (Design Manager), User Experience",
+      "what": "provided design feedback",
+      "when": "2024-06-28",
+      "where": "UI/UX Review",
+      "thing": "Demo Session: User Interface Review\nDate: June 28, 2024\nDuration: 45 minutes\n\nContext:\n- Reviewing new UI components\n- Target users: Enterprise customers\n- Focus on accessibility and usability\n\nKey Feedback:\n\"The accessibility features are comprehensive. The ARIA labels and keyboard navigation are well implemented.\"\n\nFollow-up Discussion:\n- Color contrast improvements\n- Mobile responsiveness\n- User testing plans\n\nAction Items:\n- Schedule accessibility audit\n- Create design system documentation\n- Plan user testing sessions",
+      "how": "zoom:recording:demo-2024-06-28"
+    },
+    {
+      "who": "James Wilson (Security Lead), Infrastructure & Security",
+      "what": "provided security feedback",
+      "when": "2024-06-27",
+      "where": "Security Review",
+      "thing": "Demo Session: Security Features\nDate: June 27, 2024\nDuration: 60 minutes\n\nContext:\n- Reviewing security implementation\n- Compliance requirements: SOC 2, GDPR\n- Focus on data protection\n\nKey Feedback:\n\"The encryption implementation is robust. The audit logging system will help us maintain compliance.\"\n\nFollow-up Discussion:\n- Penetration testing results\n- Compliance documentation\n- Security monitoring\n\nAction Items:\n- Schedule security assessment\n- Review compliance checklist\n- Plan security training",
+      "how": "teams:recording:demo-2024-06-27"
+    },
+    {
+      "who": "Rachel Chen (Staff Engineer), Machine Learning Engineering",
+      "what": "provided analytics feedback",
+      "when": "2024-06-26",
+      "where": "Analytics Review",
+      "thing": "Demo Session: Data Analytics Platform\nDate: June 26, 2024\nDuration: 75 minutes\n\nContext:\n- Reviewing analytics capabilities\n- Data volume: 10TB+ daily\n- Focus on data processing\n\nKey Feedback:\n\"The real-time data processing pipeline is impressive. The ML model integration is particularly useful.\"\n\nFollow-up Discussion:\n- Data visualization options\n- Custom model training\n- Performance optimization\n\nAction Items:\n- Schedule data migration planning\n- Review model accuracy\n- Plan capacity scaling",
+      "how": "zoom:recording:demo-2024-06-26"
+    },
+    {
+      "who": "Tom Martinez (SRE Manager), Site Reliability Engineering",
+      "what": "provided infrastructure feedback",
+      "when": "2024-06-25",
+      "where": "Infrastructure Review",
+      "thing": "Demo Session: Cloud Infrastructure\nDate: June 25, 2024\nDuration: 60 minutes\n\nContext:\n- Reviewing cloud infrastructure\n- Current setup: Multi-region deployment\n- Focus on reliability and cost\n\nKey Feedback:\n\"The automated scaling and cost optimization features are exactly what we need. The monitoring dashboard is comprehensive.\"\n\nFollow-up Discussion:\n- Resource optimization\n- Disaster recovery\n- Cost management\n\nAction Items:\n- Schedule infrastructure audit\n- Review cost projections\n- Plan capacity planning",
+      "how": "teams:recording:demo-2024-06-25"
+    },
+    {
+      "who": "Sophie Anderson (Senior TPM), Technical Program Management",
+      "what": "provided roadmap feedback",
+      "when": "2024-06-24",
+      "where": "Product Roadmap Review",
+      "thing": "Demo Session: Product Roadmap\nDate: June 24, 2024\nDuration: 45 minutes\n\nContext:\n- Reviewing product roadmap\n- Current version: 2.3.1\n- Focus on future features\n\nKey Feedback:\n\"The roadmap aligns well with our needs. The planned integrations will solve several key pain points.\"\n\nFollow-up Discussion:\n- Feature prioritization\n- Timeline adjustments\n- Resource allocation\n\nAction Items:\n- Schedule sprint planning\n- Review feature backlog\n- Plan release schedule",
+      "how": "zoom:recording:demo-2024-06-24"
+    },
+    {
+      "who": "Alex Thompson (Tech Lead), Platform Engineering",
+      "what": "provided technical feedback",
+      "when": "2024-06-23",
+      "where": "Technical Deep Dive",
+      "thing": "Demo Session: Technical Architecture\nDate: June 23, 2024\nDuration: 90 minutes\n\nContext:\n- Reviewing technical implementation\n- Current stack: Modern web technologies\n- Focus on innovation and scalability\n\nKey Feedback:\n\"The modular architecture and plugin system are well-designed. The API extensibility will allow for easy integration.\"\n\nFollow-up Discussion:\n- Performance optimization\n- Scalability testing\n- Integration patterns\n\nAction Items:\n- Schedule code review\n- Review technical documentation\n- Plan integration testing",
+      "how": "teams:recording:demo-2024-06-23"
+    }
+]

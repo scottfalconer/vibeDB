@@ -1,1 +1,82 @@
-{"who": "support:acme_corp", "what": "escalated login issue", "when": "2024-06-18T09:47:00Z", "where": "Slack #support", "thing": "We’re still getting 403 errors even after rolling back to v2.1."}
+[
+  {
+    "who": "Customer Engineering Team, Customer Success",
+    "what": "reported login issues",
+    "when": "2024-06-18",
+    "where": "Support Ticket System",
+    "thing": "Ticket #45621\nSubject: 403 Errors on SSO login\n\nDetails:\nWe're getting persistent 403 errors when trying to log in through SSO.\nIssue started this morning. Environment: prod-us-east.\nScreenshots + HAR file attached.\nUser impact: high.",
+    "how": "zendesk:ticket:45621"
+  },
+  {
+    "who": "Anna Rodriguez (Staff Engineer), Infrastructure & Security",
+    "what": "investigated potential root cause",
+    "when": "2024-06-18",
+    "where": "Engineering Discussion",
+    "thing": "Could be related to PR#4812 — we changed the token refresh flow in `/sso/callback`. Might only impact edge proxy configs. Reproducing locally now.",
+    "how": "jira:comment:TICKET-9321"
+  },
+  {
+    "who": "Customer Engineering Team, Customer Success",
+    "what": "requested additional information",
+    "when": "2024-06-18",
+    "where": "Support Thread",
+    "thing": "Hi — can you provide a HAR file from one of the affected sessions? Also useful: exact timestamp + user email for a failing attempt.",
+    "how": "zendesk:thread:45621"
+  },
+  {
+    "who": "Sam Thompson, IT Team (Acme Corp)",
+    "what": "provided detailed reproduction steps",
+    "when": "2024-06-18",
+    "where": "Support Email",
+    "thing": "Attached:\n- `acme-403-har.json`\n- `login-error.mov`\n\nConfirmed it breaks 15–20 seconds after logging in with SSO.\nAccount: sam@acme-corp.com\nEnv: prod-us-east",
+    "how": "email:support:45621"
+  },
+  {
+    "who": "Product Management Team, Product Leadership",
+    "what": "flagged critical customer issue",
+    "when": "2024-06-18",
+    "where": "Engineering Escalation Channel",
+    "thing": "@eng-leads Acme is blocked again. That's 3x in 5 days.\nThey're in contract renewal and getting nervous.\nWe promised stability post-2.1 — we need a root cause.",
+    "how": "slack:channel:escalations"
+  },
+  {
+    "who": "David Wu (Senior CE), Customer Engineering",
+    "what": "conducted status update call",
+    "when": "2024-06-18",
+    "where": "Customer Meeting",
+    "thing": "[Zoom Transcript Excerpt]\n\n14:01:55 ACME - J. Price: \"It's not just downtime — our team can't even test right now.\"\n14:02:22 CX - D. Wu: \"We've escalated to engineering. I'll send a timeline by 3pm. We're treating this as urgent.\"\n14:03:08 ACME - J. Price: \"Appreciated. We just need transparency.\"",
+    "how": "zoom:recording:acme-2024-06-18"
+  },
+  {
+    "who": "Platform Engineering Team, Site Reliability Engineering",
+    "what": "implemented system fix",
+    "when": "2024-06-18",
+    "where": "Production Environment",
+    "thing": "Deployed hotfix #7241 to prod-us-east\n- Added fallback token flow for SSO callback\n- Bypasses refresh timing check if edge proxy headers present\n- Added extra logging to callback handler",
+    "how": "deploy:prod:hotfix:7241"
+  },
+  {
+    "who": "Product Management Team, Product Leadership",
+    "what": "confirmed resolution",
+    "when": "2024-06-18",
+    "where": "Support Ticket",
+    "thing": "Everything is working again.\nWe tested logins from 3 accounts.\nThanks to the team for moving fast on this one.",
+    "how": "zendesk:update:45621"
+  },
+  {
+    "who": "Product Management Team, Product Leadership",
+    "what": "published incident report",
+    "when": "2024-06-19",
+    "where": "Internal Documentation",
+    "thing": "### Acme SSO Issue — Postmortem\n\n**Root cause:** Bug in `/sso/callback` token refresh introduced in PR#4812\n**Impact:** Affected customers using edge proxy + Okta\n**Resolution:** Hotfix deployed June 18; full fix in PR#4827\n**Actions:**\n- Add e2e test for edge header parsing\n- Improve fallback logging in auth gateway\n- Add 'high-sensitivity' label to all post-login paths",
+    "how": "confluence:page:incident-2024-06-18"
+  },
+  {
+    "who": "Security Review Team, Infrastructure & Security",
+    "what": "submitted code changes",
+    "when": "2024-06-19",
+    "where": "Code Repository",
+    "thing": "https://github.com/company/app/pull/4827\n\nFixes edge proxy token mismatch in SSO callback flow.\n- Aligns auth expiration with IDP issued_at\n- Adds structured logging for token refresh window mismatch\n- Removes hardcoded fallback path",
+    "how": "github:pr:4827"
+  }
+]

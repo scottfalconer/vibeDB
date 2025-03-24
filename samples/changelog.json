@@ -1,1 +1,82 @@
-{"who": "engineering", "what": "deployed update", "when": "2024-06-30", "where": "Changelog", "thing": "🔧 Fixed: proxy auth timeout handling (bug #7721)\n🚀 Added: stream-based event logging"}
+[
+    {
+      "who": "Alex Thompson (Staff Engineer), Platform Engineering",
+      "what": "deployed system updates",
+      "when": "2024-06-30",
+      "where": "Production Environment",
+      "thing": "Title: Production Deploy v2.3.1\n\nChanges:\n🔧 Fixed: proxy auth timeout handling (bug #7721)\n- Root cause: Token refresh window mismatch in edge proxy\n- Impact: Affected 0.1% of authenticated requests\n- Resolution: Added fallback to legacy refresh flow\n\n🚀 Added: stream-based event logging\n- New structured logging format for all system events\n- Includes request ID, user context, and timing data\n- Enables better debugging and monitoring\n\nDeploy Notes:\n- Rolled out to 10% of traffic at 14:30 UTC\n- Full rollout completed at 15:45 UTC\n- No incidents reported",
+      "how": "deploy:prod:changelog:2024-06-30"
+    },
+    {
+      "who": "Sarah Chen (Senior Engineer), Backend Engineering",
+      "what": "deployed database optimization",
+      "when": "2024-06-29",
+      "where": "Production Environment",
+      "thing": "Title: Database Performance Update v2.3.0\n\nChanges:\n🔧 Fixed: Slow query performance in analytics dashboard\n- Root cause: Missing index on timestamp column\n- Impact: 30% slower dashboard load times\n- Resolution: Added composite index on (timestamp, user_id)\n\n🚀 Added: Query caching layer\n- Implemented Redis-based query cache\n- Cache invalidation on data updates\n- 40% reduction in database load\n\nDeploy Notes:\n- Staged rollout over 4 hours\n- Monitoring showed 50% reduction in query latency\n- No data consistency issues reported",
+      "how": "deploy:prod:changelog:2024-06-29"
+    },
+    {
+      "who": "Michael Rodriguez (Engineering Manager), Frontend Engineering",
+      "what": "deployed UI improvements",
+      "when": "2024-06-28",
+      "where": "Production Environment",
+      "thing": "Title: UI Enhancement Release v2.2.9\n\nChanges:\n🎨 Added: Dark mode support\n- System-wide dark theme implementation\n- User preference persistence\n- Accessibility compliance updates\n\n🔧 Fixed: Mobile responsiveness issues\n- Root cause: Incorrect viewport meta tags\n- Impact: Affected 15% of mobile users\n- Resolution: Updated responsive breakpoints\n\nDeploy Notes:\n- Gradual rollout to 25% of users\n- A/B testing for dark mode engagement\n- Positive user feedback received",
+      "how": "deploy:prod:changelog:2024-06-28"
+    },
+    {
+      "who": "Emily Watson (Security Lead), Infrastructure & Security",
+      "what": "deployed security updates",
+      "when": "2024-06-27",
+      "where": "Production Environment",
+      "thing": "Title: Security Patch v2.2.8\n\nChanges:\n🔒 Fixed: OAuth token validation vulnerability\n- Root cause: Incorrect signature verification\n- Impact: Potential token forgery risk\n- Resolution: Updated crypto library to v3.0.0\n\n🚀 Added: Rate limiting for API endpoints\n- Global rate limiting implementation\n- IP-based throttling\n- Custom limits per endpoint\n\nDeploy Notes:\n- Emergency security patch\n- Zero downtime deployment\n- All systems verified secure",
+      "how": "deploy:prod:changelog:2024-06-27"
+    },
+    {
+      "who": "David Kim (SRE), Site Reliability Engineering",
+      "what": "deployed infrastructure updates",
+      "when": "2024-06-26",
+      "where": "Production Environment",
+      "thing": "Title: Infrastructure Update v2.2.7\n\nChanges:\n🔄 Updated: Kubernetes cluster to v1.28\n- Node pool upgrades\n- Security patches\n- Performance optimizations\n\n🚀 Added: Automated scaling rules\n- Dynamic pod scaling based on load\n- Resource utilization monitoring\n- Cost optimization policies\n\nDeploy Notes:\n- Rolling update over 6 hours\n- Zero service disruption\n- 20% resource efficiency improvement",
+      "how": "deploy:prod:changelog:2024-06-26"
+    },
+    {
+      "who": "Lisa Patel (Staff Engineer), Backend Engineering",
+      "what": "deployed API improvements",
+      "when": "2024-06-25",
+      "where": "Production Environment",
+      "thing": "Title: API Enhancement v2.2.6\n\nChanges:\n🔧 Fixed: GraphQL query timeout issues\n- Root cause: N+1 query problem\n- Impact: 5% of queries timing out\n- Resolution: Implemented data loader pattern\n\n🚀 Added: API versioning support\n- Version header implementation\n- Backward compatibility layer\n- Deprecation notices\n\nDeploy Notes:\n- Staged rollout to 10% of traffic\n- Monitoring showed 60% reduction in timeouts\n- No breaking changes reported",
+      "how": "deploy:prod:changelog:2024-06-25"
+    },
+    {
+      "who": "James Wilson (Senior Engineer), Frontend Engineering",
+      "what": "deployed frontend optimizations",
+      "when": "2024-06-24",
+      "where": "Production Environment",
+      "thing": "Title: Frontend Performance v2.2.5\n\nChanges:\n⚡ Optimized: Bundle size reduction\n- Tree shaking implementation\n- Code splitting improvements\n- Asset compression\n\n🔧 Fixed: Memory leak in dashboard\n- Root cause: Unclosed event listeners\n- Impact: Gradual performance degradation\n- Resolution: Proper cleanup implementation\n\nDeploy Notes:\n- Full rollout completed\n- 40% reduction in initial load time\n- Memory usage stabilized",
+      "how": "deploy:prod:changelog:2024-06-24"
+    },
+    {
+      "who": "Rachel Chen (Tech Lead), Machine Learning Engineering",
+      "what": "deployed analytics updates",
+      "when": "2024-06-23",
+      "where": "Production Environment",
+      "thing": "Title: Analytics Enhancement v2.2.4\n\nChanges:\n📊 Added: Real-time analytics pipeline\n- Stream processing implementation\n- Real-time dashboards\n- Alert system integration\n\n🔧 Fixed: Data aggregation delays\n- Root cause: Batch processing bottlenecks\n- Impact: 2-hour delay in reports\n- Resolution: Parallel processing implementation\n\nDeploy Notes:\n- Phased rollout over 48 hours\n- Real-time data now available\n- Historical data reprocessed",
+      "how": "deploy:prod:changelog:2024-06-23"
+    },
+    {
+      "who": "Tom Martinez (Engineering Manager), Backend Engineering",
+      "what": "deployed service improvements",
+      "when": "2024-06-22",
+      "where": "Production Environment",
+      "thing": "Title: Core Services Update v2.2.3\n\nChanges:\n🔄 Updated: Service mesh configuration\n- Traffic routing improvements\n- Circuit breaker implementation\n- Load balancing optimization\n\n🚀 Added: Distributed tracing\n- OpenTelemetry integration\n- Request flow visualization\n- Performance monitoring\n\nDeploy Notes:\n- Rolling update across regions\n- Zero downtime achieved\n- Improved observability metrics",
+      "how": "deploy:prod:changelog:2024-06-22"
+    },
+    {
+      "who": "Sophie Anderson (Senior TPM), Technical Program Management",
+      "what": "deployed testing framework",
+      "when": "2024-06-21",
+      "where": "Production Environment",
+      "thing": "Title: Testing Framework v2.2.2\n\nChanges:\n🧪 Added: Automated E2E testing\n- Cypress test suite implementation\n- CI/CD pipeline integration\n- Test reporting dashboard\n\n🔧 Fixed: Flaky test issues\n- Root cause: Race conditions\n- Impact: 15% test failure rate\n- Resolution: Improved test stability\n\nDeploy Notes:\n- Gradual rollout to all environments\n- Test coverage increased to 85%\n- CI pipeline reliability improved",
+      "how": "deploy:prod:changelog:2024-06-21"
+    }
+]

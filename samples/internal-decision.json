@@ -1,1 +1,83 @@
-{"who": "product team", "what": "decided to delay launch", "when": "2024-07-01T15:00:00Z", "where": "weekly planning meeting", "thing": "Given the API instability and open feedback from Acme, we’re pushing the release to July 10."}
+[
+    {
+      "who": "Marcus Chen (Tech Lead), Backend Engineering",
+      "what": "reported performance concerns",
+      "when": "2024-07-03",
+      "where": "Engineering Discussion",
+      "thing": "@backend-devs The last deploy seems to have regressed latency on /search by ~12–15%. Seeing it consistently across EU and US-East.\nLooking into whether it's related to the new scoring algorithm.",
+      "how": "slack:channel:infra"
+    },
+    {
+      "who": "Sarah Patel (Senior PM), Product Management",
+      "what": "requested performance clarification",
+      "when": "2024-07-03",
+      "where": "Engineering Discussion",
+      "thing": "What's the baseline you're comparing against?\nWe tested this with the same scoring model on staging last week and saw no regression.",
+      "how": "slack:thread:infra"
+    },
+    {
+      "who": "David Kim (Staff Engineer), Site Reliability Engineering",
+      "what": "shared performance metrics",
+      "when": "2024-07-03",
+      "where": "Monitoring Dashboard",
+      "thing": "Latency graph: /search handler — 95th percentile\n\nEU - before deploy: 187ms → after: 212ms\nUS-East - before: 179ms → after: 204ms\nLinked dashboard: https://grafana.internal/search-latency",
+      "how": "grafana:export:search-latency"
+    },
+    {
+      "who": "Lisa Rodriguez (Research Lead), User Experience",
+      "what": "reported user feedback",
+      "when": "2024-07-03",
+      "where": "Research Documentation",
+      "thing": "- Session review (Acme Corp, June 28): \"Search felt faster than before. Results surfaced what we wanted.\"\n- Beta feedback (HomePage Inc, July 1): \"Huge improvement. Not sure what changed but it's working great.\"",
+      "how": "research:feedback:july-2024"
+    },
+    {
+      "who": "James Wilson (VP Engineering), Engineering Leadership",
+      "what": "summarized investigation status",
+      "when": "2024-07-03",
+      "where": "Team Discussion",
+      "thing": "So far:\n- Metrics show latency regression\n- Product is seeing better user feedback\n- Could be cache warmup or regional differences\n- Leaving this open for now — let's circle back once we've run end-to-end tests",
+      "how": "slack:thread:infra"
+    },
+    {
+      "who": "Alex Thompson (SRE Manager), Site Reliability Engineering",
+      "what": "captured system logs",
+      "when": "2024-07-03",
+      "where": "System Logs",
+      "thing": "[2024-07-03T13:02:11Z] GET /search latency=182ms region=us-east score_model=v2\n[2024-07-03T13:04:27Z] GET /search latency=176ms region=eu-west score_model=v2",
+      "how": "logs:search-api:2024-07-03"
+    },
+    {
+      "who": "Rachel Park (Senior TPM), Technical Program Management",
+      "what": "reported test results",
+      "when": "2024-07-03",
+      "where": "Test Documentation",
+      "thing": "Ran side-by-side staging tests with scoring v2:\n- No regression in response time (stable ~160–170ms)\n- Increased variance observed with smaller result sets\n- Possibly region-specific latency due to a CDN config?",
+      "how": "jira:test:TICKET-10422"
+    },
+    {
+      "who": "Sarah Patel (Senior PM), Product Management",
+      "what": "evaluated user impact",
+      "when": "2024-07-03",
+      "where": "Team Discussion",
+      "thing": "From our side, this is already a win.\nNo user-facing complaints since rollout, and feedback has been consistently positive.\nIf anything, this has made the product feel more responsive.",
+      "how": "slack:thread:infra"
+    },
+    {
+      "who": "James Wilson (VP Engineering), Engineering Leadership",
+      "what": "decided to pause rollout",
+      "when": "2024-07-03",
+      "where": "Team Discussion",
+      "thing": "Holding further rollout to other regions until we confirm root cause of latency shift.\nToo risky to assume feedback = performance.",
+      "how": "slack:thread:infra"
+    },
+    {
+      "who": "Marcus Chen (Tech Lead), Backend Engineering",
+      "what": "documented next steps",
+      "when": "2024-07-03",
+      "where": "Project Documentation",
+      "thing": "- Run isolated tests with and without scoring v2 across EU and US-East\n- Get user sentiment review by region\n- Final decision pending data — reopen next Monday",
+      "how": "confluence:page:performance-review"
+    }
+]
+  
