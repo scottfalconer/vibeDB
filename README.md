@@ -12,7 +12,7 @@ What matters isn’t how you store it - it’s that the fields and structure mea
 It reflects how we naturally make sense of the world.
 
 When we explain what happened, we instinctively answer:  
-> **Who, what, when, where.**
+> **Who, what, when, where, how.**
 
 vibeDB takes the human way of explaining things - and turns it into a shape machines can understand.
 
@@ -31,17 +31,18 @@ You’re just saving a moment - in a format that can be reasoned over later.
 
 ## What’s in a vibeDB Record?
 
-Only five fields - all optional:
+Only six fields - all optional:
 
 - `who`: the person, system, or team involved  
 - `what`: the action or event  
 - `when`: when it happened - written so it still makes sense later (e.g. "2024-07-03", "March 2024", "the 80s")  
 - `where`: the surface, channel, or context  
+- `how`: the behavior or mechanism - how it happened or progressed over time  
 - `thing`: the actual content - what was said, shown, or shared  
 
 You can log just a `thing`.  
 Or just a `who`.  
-Or wrap a moment in a full shape with all five.
+Or wrap a moment in a full shape with all six.
 
 You don’t extract, summarize, or label early.  
 You just capture what was present - clean, contextual, and ready to evolve.
@@ -67,6 +68,13 @@ You’d probably say:
 
 You’re not trying to extract the meaning or simplify the content - you’re capturing the source.  
 That’s the memory. That’s what goes in `thing`.
+
+---
+
+## What About `how`?
+
+`how` answers the question of behavior - the nature of the process, or the cause behind a sequence of events.  
+It’s often useful for traceability or understanding flow across systems.
 
 ---
 
