@@ -1,0 +1,1 @@
+{"who": "engineering", "what": "deployed update", "when": "2024-06-30", "where": "Changelog", "thing": "🔧 Fixed: proxy auth timeout handling (bug #7721)\n🚀 Added: stream-based event logging"}
