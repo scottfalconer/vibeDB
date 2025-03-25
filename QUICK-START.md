@@ -72,7 +72,3 @@ You probably want to operationalize this.
 
 vibeDB gives you the shape.  
 You decide where it goes - and what comes next.
-
----
-
-Let me know when you're ready to build out the `/samples/` directory or want alternate versions of this demo in `.yaml`, `.csv`, or Markdown.
