@@ -1,6 +1,6 @@
 # vibeDB
 
-**A foundational database for shared memory - you and emerging intelligence.**
+**A foundational database for shared memory - for you and emerging intelligence.**
 
 ---
 
