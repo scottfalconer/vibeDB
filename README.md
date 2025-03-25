@@ -4,6 +4,23 @@
 
 ---
 
+## Try the 10-Second Quick Start
+
+Want to see how it works?
+
+[Quick Start →](QUICK-START.md)
+
+No setup. No boilerplate.  
+Just a few fields. Then you’ll get it.
+
+---
+
+## Or explore the full spec
+
+[Spec →](vibeDB-spec.md)
+
+---
+
 **vibeDB is a shared structure for storing moments that matter - with just enough shape to be useful later.**  
 What matters isn’t how you store it - it’s that the fields and structure mean something.
 
@@ -125,14 +142,3 @@ Can you use vibeDB to vibe code? Yes.
 Can you use it for something serious? Also yes.
 
 vibeDB gives you shared structure - light enough to drop into an AI IDE, durable enough to support meaning.
-
----
-
-## Try the 10-Second Quick Start
-
-Want to see how it works?
-
-[Quick Start →](QUICK-START.md)
-
-No setup. No boilerplate.  
-Just a few fields. Then you’ll get it.
