@@ -1,4 +1,4 @@
-## vibeDB Specification (v1.2)
+## vibeDB Specification
 
 **vibeDB helps people and machines remember what matters, with context.**
 
@@ -17,72 +17,41 @@ Each record has six fields. Every field is optional. Use any combination, includ
 - The point isn't structure. The point is context.
 - Every record is centered on a specific **thing**
 
-## 📌 Interpretive Assumptions and Guidance
+---
 
-This spec defines not just a structure, but a set of assumptions that guide how VibeDB records should be interpreted - by people, tools, and AI systems. These assumptions are **versionable**: if we change them, we update the spec. That way, interpretation is transparent, grounded, and consistent.
+## Interpretive Assumptions
 
-### 🤝 A Note on Shared Responsibility
+### A Social Contract
 
-VibeDB isn’t just a shape - it’s a social contract.
+vibeDB isn’t just a schema - it’s a shared memory protocol. It works because:
 
-It works because:
 - **People try to be honest**
-- **AI tries to be grounded**
-- **Tools try to interoperate**
+- **AI systems stay grounded**
+- **Tools are interoperable**
 - **Everyone leaves room for contradiction**
 
-Whether you’re human or machine, this spec assumes you're part of something larger - a memory system shared across time, tools, and perspectives. That means playing fair, sharing meaning, and writing in ways others can understand later.
+This means:
+- Don’t assume a single truth. Contradictions may reveal drift, change, or multiple perspectives.
+- Be generous with context. Write for someone else who wasn’t there.
+- Keep reasoning anchored in real content - especially in the `thing` field.
 
-> If someone else saw what you wrote - or asked the same thing of another AI - would they get the same result?
+> Ask yourself: If someone else saw what you wrote - or asked the same thing of another AI - would they get the same result?
 
-That’s the vibe. ✨
+That’s the vibe.
 
-### 🧠 Tips if You're an AI
-
-> For AI systems interpreting or generating VibeDB records.
-
-- **Assume fallibility** - from both people and machines. Records may be mistaken, conflicting, or incomplete. That’s not a problem - it’s part of the context.
-- **Contradictions are clues**: When records disagree, treat it as a signal - disagreement, drift, or discovery.
-- **Use `thing` as your ground truth**: Anchor reasoning in the actual source content. Don’t rely only on field summaries.
-- **Fields are literal**:
-  - `who`, `what`, `when`, `where` = human-facing context
-  - `how` = system/process-level behavior
-  - `thing` = source content itself
-- **Don’t hallucinate `why`**: VibeDB records don’t contain intent. Reason about "why" only across records.
-- **Identity is contextual**: No global IDs. Don’t assume sameness across records unless it's natural to do so.
-- **Look across time**: Patterns, changes, and insight come from seeing multiple records - not one in isolation.
-
-### 💻 Tips if You're an AI Code Writer
-
-- **Favor interoperability**: Your code should work the same if someone else gave you the same schema and task.
-- **Degrade gracefully**: Fields may be missing. Don't fail - extract what you can.
-- **Avoid nonstandard fields** unless clearly requested.
-- **Write reusable logic**: If another dev asked another AI to do this, would it behave the same?
-- **Expose your logic**: When you map tags (e.g., `jira:test:TICKET-001`), log your assumptions.
-
-### 🧑‍💻 Tips if You're a Human
-## Interpretive Assumptions
 
 ### "Thing-first" Mindset
 
 Think of every record as answering: **"What is this a thing about?"**
 
-### Security & Privacy
-vibeDB does not enforce access controls or privacy mechanisms. These concerns should be handled by the implementing system.
+- Encourage prompts and UI to emphasize *"this is a thing about..."* over *"X happened"*
+- The `thing` field should contain actual, referenceable content - it's the anchor
+- All other fields describe this `thing` - not general events or summaries
 
-### Lifecycle Stages
-vibeDB operations typically occur in three stages:
 ---
 
-1. **previbe**: Data capture and preparation
-2. **vibin**: Active use and management
-3. **postvibe**: Search, archival, and forgetting
 ## Field Semantics
 
-### Data Management
-- Records may be archived, faded, or pruned according to implementation needs
-- Multiple vibeDB instances may coexist, segmented by purpose or access level
-- Implementation-specific indexing and materialization is encouraged
 ### `thing` - The Actual Content
 
 This is the anchor. It’s what the record is *about* - a quote, a document, a log line, a transcript, a block of source code, etc. 
@@ -200,35 +169,32 @@ Describe process, tools, systems, or tags relevant to the record’s creation.
 
 ---
 
-## Writing Tips
+## Security, Privacy, and Lifecycle
 
-### If You’re a Human
-- Write as if explaining to a future teammate
-- Don’t summarize or speculate - preserve what was actually said or shared
-- Use natural phrasing for lists, ranges, and groupings
+### Security & Privacy
+vibeDB does not enforce access controls or privacy mechanisms. These concerns should be handled by the implementing system, depending on the use case and context. Records may contain sensitive information and should be stored, shared, and processed accordingly.
 
-### If You’re an AI
-- Anchor your reasoning in the `thing` field
-- Use field values literally - no interpretation
-- Never invent a `why`
+### Lifecycle Stages
+vibeDB operations typically occur in three stages:
 
----
+1. **previbe** – data capture and preparation
+2. **vibin** – active use and interaction
+3. **postvibe** – archival, retrieval, and forgetting
 
-## Format Notes
+### Data Management
+- Records may be archived, faded, or pruned depending on implementation design
+- Multiple vibeDB instances may coexist, segmented by purpose, audience, or retention
+- Implementation-specific indexing, filtering, and summarization are encouraged for performance and usability
 
-vibeDB defines *field meaning*, not file format.
+## AI & Code Implementation Guidance
 
-Valid formats include:
-- JSON
-- JSONL
-- YAML
-- Markdown
-- CSV
-- Any clearly structured text-based format
+### Tips if You're an AI
 
----
-
-## Version
-
-**v1.2** - Clarified field relationships, added thing-centric authoring guidance, expanded examples and best practices; added human/machine prompt examples per field
+- **Use `thing` as ground truth** - always anchor reasoning in the actual content.
+- **Fields are literal** - do not reinterpret `who`, `what`, `when`, `where`, or `how`.
+- **Avoid fabricating intent** - there is no `why` field; inference should come from context across records.
+- **Expect gaps** - not all fields will be present; treat missing info as normal.
+- **Contradictions are meaningful** - differing records can signal change, disagreement, or drift.
+- **Identity is contextual** - no global IDs; don't assume sameness across records unless it’s natural.
+- **Look across time** - patterns and insights often come from seeing multiple records, not just one.
 
