@@ -148,7 +148,33 @@ Not just physical space - use tools, platforms, locations, files, etc.
 
 ### `how` - How This Was Captured or Created
 
+**Tag what the system knows. Describe what the human saw.**
+
+The `how` field is the one place we recommend using structured tags. Unlike other fields - where literal, natural phrasing is preferred for readability and compatibility with hashing - `how` is purposefully machine-friendly. This is your best place to attach identifiers, traceability codes, or internal hooks that support automation, filtering, or retrieval.
+
 Describe process, tools, systems, or tags relevant to the record’s creation.
+
+#### Tag Format (Recommended)
+Use `namespace:key=value` for traceable, system-readable tags. Combine multiple tags using `;` separators.
+
+**Examples:**
+- `jira:test=TICKET-10422`
+- `customer:salesforce_id=11234`
+- `ai:summary=true; source:manual`
+- `ref:thing:sha256=abc123...` (a hash pointing to another vibeDB record)
+
+This format is interoperable with SQL (`LIKE`, regex), Snowflake (`RLIKE`), and JavaScript (`.includes()`), and provides human-readable clarity while supporting structured filtering.
+
+#### Related Tagging Conventions
+This tag pattern is designed to be simple, flexible, and compatible with common filtering and search techniques. While vibeDB doesn't enforce any schema, this structure makes it easy to:
+
+- Align with tags from external systems like issue trackers, CRMs, observability tools, or cloud metadata
+- Pull in machine-generated tags or add human-defined ones
+- Join or cross-reference records based on traceable tags
+
+Whether you’re tagging a sales interaction (`customer:salesforce_id=11234`), linking a code commit (`git:sha=abc123`), or flagging AI-generated content (`ai:summary=true`), this convention keeps the record self-contained and searchable.
+
+vibeDB encourages this pattern to support meaningful connections between otherwise disconnected systems.
 
 - Use structured traceability (e.g. `jira:test:TICKET-10422`)
 - Include methods: "auto-imported", "transcribed via Otter.ai"
