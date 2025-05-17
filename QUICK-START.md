@@ -12,7 +12,7 @@ Now here’s what you just did - written as a vibeDB record:
   "what": "started the quick start walkthrough",
   "when": "a few seconds ago and still going",
   "where": "quick-start.md in the vibeDB repo on GitHub",
-  "how": "url:https://github.com/scottfalconer/vibedb/blob/main/QUICK-START.md",
+  "how": "url:https://github.com/scottfalconer/vibeDB/blob/main/QUICK-START.md",
   "thing": "# Quick Start\n\nTake 3 seconds to read this sentence:\n\n> You just opened this page and read the first few lines.\n\nNow here’s what you just did - written as a vibeDB record:"
 }
 ```
